@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    /* Changed 'Ariel' to 'Arial' */
+    background-color: #f4f4f4;
+    /* Added a light background color */
+}
+
+header h1 {
+    font-size: 220%;
+    /* Increased font size */
+    text-align: center;
+    background-color: #D8D8D8;
+    /* Slightly lighter shade */
+    line-height: 70px;
+    /* Increased line height */
+    border-radius: 8px;
+    /* Added rounded corners */
+}
+
+div.side-part {
+    display: flex;
+    width: 270px;
+    /* Increased width */
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    /* Increased margin-top */
+    position: relative;
+    /* Added to use the 'left' property */
+    left: 10px;
+    /* Adjusted the left position */
+}
+
+div.parent {
+    display: flex;
+    flex-direction: column;
+    /* Added to ensure children are stacked vertically */
+}
+
+div.grid-container {
+    width: 98vw;
+    /* Reduced width slightly */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 260px 210px;
+    /* Slightly increased row heights */
+    align-items: center;
+    text-align: center;
+    margin-right: 15px;
+    /* Increased margin-right */
+    gap: 10px;
+    /* Added gap between grid items */
+}
+
+div#big-card {
+    grid-column: 1 / 6;
+    border-radius: 8px;
+    /* Added rounded corners */
+}
+
+div.big-card h1 {
+    font-size: 125%;
+    /* Increased font size */
+    color: #333;
+    /* Darker text color */
+}
+
+div.card-1 {
+    grid-column: 1 / 6;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Added to allow wrapping of child elements */
+}
+
+.date {
+    border: 1px solid #888;
+    /* Changed border color */
+    font-style: italic;
+    padding: 5px;
+    /* Added padding */
+}
+
+.appendedtitle {
+    margin: 20px;
+    font-style: italic;
+    color: #555;
+    /* Darker text color */
+}
+
+div.top-part h2 {
+    font-size: 155%;
+    /* Increased font size */
+    margin: 12px;
+    /* Adjusted margin */
+    font-weight: 700;
+    color: #444;
+    /* Darker text color */
+}
+
+button {
+    margin: 10px;
+    width: 180px;
+    /* Increased width */
+    background-color: rgb(120, 138, 196);
+    /* Slightly darker shade */
+    height: 30px;
+    /* Increased height */
+    border-style: none;
+    color: white;
+    border-radius: 8px;
+    /* Increased border radius */
+    transition: transform 0.3s;
+    /* Smoothed hover effect */
+}
+
+.big-card {
+    border: 1px solid #888;
+    /* Changed border color */
+    border-radius: 8px;
+    /* Added rounded corners */
+}
+
+div#big-card h1 {
+    margin-bottom: 18px;
+    /* Adjusted margin */
+    margin-top: 12px;
+    font-weight: 600;
+    margin-right: 7px;
+}
+
+div#big-card p {
+    margin: 18px;
+    /* Adjusted margin */
+}
+
+button:hover {
+    transform: scale(1.125);
+    /* Slightly reduced hover scale */
+    background-color: rgb(100, 118, 176);
+    /* Darker shade on hover */
+}
+
+li {
+    margin: 15px;
+    background-color: #b0e0e6;
+    /* Changed to a lighter shade of aqua */
+    line-height: 32px;
+    /* Adjusted line height */
+    padding: 0 12px 0 7px;
+    /* Adjusted padding */
+    border-radius: 8px;
+    /* Increased border radius */
+}
+
+.card-1 div {
+    margin: 15px;
+    background-color: #f9f9f9;
+    /* Slightly off-white background */
+    padding: 28px;
+    /* Increased padding */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    /* Adjusted shadow */
+    border-radius: 8px;
+    /* Added rounded corners */
+}
+
+.card-1 p {
+    margin: 12px 0 0 12px;
+    /* Adjusted margin */
+}
