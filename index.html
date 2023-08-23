@@ -2,45 +2,53 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=devicewidth, initial-scale=1.0" />
-  <title>Weather Dashboard</title>
-  <link rel="stylesheet" href="./assets/css/jass.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <script src="https://kit.fontawesome.com/3f7bdb791a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js"></script>
 </head>
 
 <body>
-<div class="flex-row align-center justify-center min-100-vh bg-primary">
-  <div id="header">
-    <h1 class="text-primary">Weather Dashboard</h1>
-  </div>
-  <div id="searchContainer">
-    <div id="search-form">
-      <h2 class="text-secondary">Search for a City</h2>
-      <form>
-        <input id="search-input" class="form-input w-100" type="text" placeholder="City |">
-      </form>
-      <button id="btn-el">Search</button>
+    <header>
+        <h1>Weather Dashboard <span><i class="fa-solid fa-sun" style="color: #d0dd1d;"></i></span></h1>
+    </header>
+    <div class="parent">
+        <div class="side-part">
+            <div class='top-part'>
+                <h2>Search for a city:</h2>
+                <div class="input-form">
+                    <input type="text" placeholder="London" style="text-align: center;" id="city-name">
+                </div>
+                <div class="search-button">
+                    <button class="btn-el">Search</button>
+                </div>
+                <div class="history-el">
+                    <ul>
+                        <li>San Diego</li>
+                        <li>Toluca</li>
+                        <li>Juarez</li>
+                        <li>Ciudad de México</li>
+                        <li>Dublin</li>
+                        <li>Sydney</li>
+                        <li>Seul</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div id="main-weather-card"></div>
+            <div id="forecast-card"></div>
+        </div>
     </div>
-    <div id="recomendedSites" class=flex-column >
-      <button class="btn btn-info btn-block">Seattle</button>
-      <button class="btn btn-info btn-block">Chicago</button>
-      <button class="btn btn-info btn-block">Orlando</button>
-      <button class="btn btn-info btn-block">Denver</button>
-      <button class="btn btn-info btn-block">Atlanta</button>
-      <button class="btn btn-info btn-block">New York</button>
-      <button class="btn btn-info btn-block">Los Angeles</button>
-      <button class="btn btn-info btn-block">San Francisco</button>
-      <button class="btn btn-info btn-block">Washington DC</button>
-      <button class="btn btn-info btn-block">London</button>
-    </div>
-  </div>
-  <div id="quickLinks"></div>
-  <div id="infoElement"></div>
-  <div id="fiveDayForecast"></div>
 
-  <div id="footer"></div>
-
-</div>
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
+
+</html>
