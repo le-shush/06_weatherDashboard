@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Create head with the information and imports that we're gonna need in the HTML -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js"></script>
 </head>
 
+<!-- Create the body element of the HTML which will contain the displayed elements -->
 <body>
     <header>
         <h1>Weather Dashboard <span><i class="fa-solid fa-sun" style="color: #d0dd1d;"></i></span></h1>
@@ -23,9 +25,11 @@
         <div class="side-part">
             <div class='top-part'>
                 <h2>Search for a city:</h2>
+                <!-- Create the div tag that will host the input -->
                 <div class="input-form">
                     <input type="text" placeholder="London" style="text-align: center;" id="city-name">
                 </div>
+                <!-- Create the button that will have the onClick event trigger -->
                 <div class="search-button">
                     <button class="btn-el">Search</button>
                 </div>
@@ -42,6 +46,7 @@
                 </div>
             </div>
         </div>
+        <!-- Create the element that will display the fetched data from the API -->
         <div class="grid-container">
             <div id="main-weather-card"></div>
             <div id="forecast-card"></div>
